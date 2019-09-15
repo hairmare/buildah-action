@@ -17,5 +17,6 @@ runs:
   image: 'Dockerfile'
   args:
     - 'build-using-dockerfile'
+    - '--userns=host'
     - "--file='${{ inputs.file }}'"
     - "--tag='${{ inputs.tag }}'"
